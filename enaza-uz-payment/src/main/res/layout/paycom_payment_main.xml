@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".payment.PaymentActivity"
+    >
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/errorLayoutSize"
+      android:background="@android:color/holo_red_light"
+      android:id="@+id/activity_main_errorLayout"
+      android:visibility="gone"
+      >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:background="@drawable/ic_warning"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/textSize_micro"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/margin_small"
+        android:textStyle="bold"
+        android:text="@string/error"
+        android:id="@+id/activity_main_errorLayout_error"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textSize_tiny"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin_small"
+        android:textColor="@android:color/white"
+        android:id="@+id/activity_main_errorMessage"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/margin_tiny"
+        android:textSize="@dimen/textSize_small"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/close"
+        android:id="@+id/activity_main_close"
+        />
+  </RelativeLayout>
+  <View style="@style/HorizontalDivider"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:padding="@dimen/margin_normal"
+      >
+
+    <TextView
+        android:id="@+id/activity_main_paymentSumTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:text="@string/paymentSum"
+        android:textSize="@dimen/textSize_tiny"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/activity_main_paymentSum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textSize_medium"
+        android:textStyle="bold"
+        tools:text="50000 сум"
+        />
+
+    <TextView
+        android:id="@+id/activity_main_cardNumberTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/cardNumber"
+        android:textSize="@dimen/textSize_micro"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/activity_main_cardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:digits=" 1234567890"
+        android:ems="10"
+        android:hint="@string/cardNumberHint"
+        android:inputType="number"
+        android:maxLength="19"
+        />
+
+    <TextView
+        android:id="@+id/activity_main_uzcardOnlyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/uzcardOnly"
+        android:textSize="@dimen/textSize_tiny"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/activity_main_dateExpireTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/dateExpire"
+        android:textSize="@dimen/textSize_micro"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/activity_main_dateExpire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/dateExpireHint"
+        android:inputType="date"
+        android:maxLength="5"
+        />
+
+    <CheckBox
+        android:id="@+id/activity_main_cardRemember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/cardRemember"
+        />
+
+    <Button
+        android:id="@+id/activity_main_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/continueText"
+        />
+
+    <ProgressBar
+        android:id="@+id/activity_main_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:visibility="gone"
+        />
+  </LinearLayout>
+</LinearLayout>
+</ScrollView>

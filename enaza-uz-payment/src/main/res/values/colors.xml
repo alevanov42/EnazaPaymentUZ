@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#e71f15</color>
+
+    <color name="colorPaycomPrimary">#4591d1</color>
+    <color name="colorPaycomPrimaryDark">#4591d1</color>
+    <color name="colorPaycomAccent">@android:color/holo_blue_light</color>
+
+    <color name="divider">#ffc4c4c4</color>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.enaza.uz">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application>
+        <activity android:name="com.enaza.uz.payment.PaymentActivity" android:theme="@style/PaycomAppTheme" />
+        <activity android:name="com.enaza.uz.payment.ConfirmActivity" android:theme="@style/PaycomAppTheme"/>
+    </application>
+</manifest>
