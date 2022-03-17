@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.dinkar.emailvalidator"
+        applicationId "com.enaza.uz"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
